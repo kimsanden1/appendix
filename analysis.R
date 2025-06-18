@@ -328,7 +328,9 @@ for (method in method_names) {
            layout = layout_contemp,
            labels = node_labels[colnames(cmat)],
            title = plot_title,
+           title.cex = 1.2,
            theme = "classic",
+           label.cex = 1.5,
            label.prop = 1,
            fade = FALSE,
            vsize = 12,
@@ -356,7 +358,9 @@ for (method in method_names) {
            layout = layout_temporal,
            labels = node_labels[colnames(tmat)],
            title = plot_title,
+           title.cex = 1.2,
            theme = "classic",
+           label.cex = 1.5,
            label.prop = 1,
            fade = FALSE,
            edge.labels = FALSE,
@@ -367,15 +371,13 @@ for (method in method_names) {
 }
 grid_plot_temp <- recordPlot()
 
-file_out <- function(type) paste0("C:/path/to/networks_", type, "_", Sys.Date(), ".png")
-
-# Save contemporaneous networks
-pdf(file_out_pdf("contemporaneous"), width = 12, height = 7)
+# Save plots
+file_out_pdf <- function(type) paste0("networks_", type, "_v2_", Sys.Date(), ".pdf")
+pdf(file_out_pdf("contemporaneous"), width = 12, height = 9)
 replayPlot(grid_plot_contemp)
 dev.off()
-
-# Save temporal networks
-pdf(file_out_pdf("temporal"), width = 12, height = 7)
+pdf(file_out_pdf("temporal"), width = 12, height = 9)
 replayPlot(grid_plot_temp)
 dev.off()
+# NOTE: these two pdfs were merged to `output.pdf` outside of this environment using Adobe Acrobat.
 
