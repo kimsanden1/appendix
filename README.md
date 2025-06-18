@@ -1,4 +1,4 @@
-# Senstivity analysis of missing data approaches
+# Sensitivity analysis of missing data approaches
 Code for sensitivity analysis used in my internship report appendix.
 
 This repository contains the code and output related to the sensitivity analysis performed for the appendix of my internship report. The analysis checks what happens to the networks visually under different combinations of missing data strategies and participant inclusion thresholds.
