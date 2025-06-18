@@ -18,8 +18,8 @@ Each method was applied to datasets filtered at four participant compliance thre
 For each resulting dataset, mlVAR models were estimated to extract temporal and contemporaneous network structures. The main objective was to examine the visual consistency of networks across the methods and thresholds.
 
 ## Contents
-- Output of the 12 approaches (3 methods x 4 thresholds) for both network types (temporal and contemporaneous)
-- The full R code used for the sensitivity analysis pipeline
+- Output of the 12 approaches (3 methods x 4 thresholds) for both network types (temporal and contemporaneous). See `output.pdf` for all network plots.
+- The full R code (`analysis.R`) used for the sensitivity analysis pipeline
 
 # How to use
 The R script (`analysis.R`) contains the full pipeline. 
