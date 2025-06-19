@@ -19,10 +19,11 @@ For each resulting dataset, mlVAR models were estimated to extract temporal and 
 
 ## Contents
 - Output of the 12 approaches (3 methods x 4 thresholds) for both network types (temporal and contemporaneous). See `output.pdf` for all network plots.
-- The full R code (`analysis.R`) used for the sensitivity analysis pipeline
+- The full R code (`analysis.R`) used for the sensitivity analysis pipeline.
+- Interactive plots are available for centrality indices (strength, in-strength, and out-strength) under `contemp_cent_plot.html` and `temp_cent_plot.html` (download files to open).
 
-# How to use
+### How to use
 The R script (`analysis.R`) contains the full pipeline. 
 
-# Citation
+### Citation
 If you use this code or analysis in your own work, please cite this repository or reference it as part of the appendix of the internship report or, if available, the published version.
